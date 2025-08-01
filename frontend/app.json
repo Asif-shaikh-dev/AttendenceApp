@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Developed by Asif",
+    "slug": "attendencemonitor",
+    "owner": "asif-shaikh-dev",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.asifshaikhdev.attendencemonitor"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.asifshaikhdev.attendencemonitor"
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/34a876c0-ecad-41dc-ad97-06ee0cd6b81e",
+      "requestHeaders": {
+        "expo-channel-name": "production"
+      },
+      "fallbackToCacheTimeout": 0
+    },
+    "extra": {
+      "eas": {
+        "projectId": "34a876c0-ecad-41dc-ad97-06ee0cd6b81e"
+      }
+    }
+  }
+}
