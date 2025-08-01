@@ -76,21 +76,21 @@ export default function QRScannerScreen() {
         return;
       }
 
-      // ❌ Year Mismatch
+      // Year Mismatch
       if (student.year !== qr.year) {
         Toast.show({ type: 'error', text1: 'Year mismatch ❌' });
         setTimeout(() => setScanned(false), 3000);
         return;
       }
 
-      // ❌ Division Mismatch
+      // Division Mismatch
       if (student.division !== qr.division) {
         Toast.show({ type: 'error', text1: 'Division mismatch ❌' });
         setTimeout(() => setScanned(false), 3000);
         return;
       }
 
-      // ✅ Check presentyActive
+      // Check presentyActive
       try {
         const validationRes = await axios.get(`/teachers/validate-session/${qr.sessionId}`);
         if (!validationRes.data.presentyActive) {
@@ -104,7 +104,7 @@ export default function QRScannerScreen() {
         return;
       }
 
-      // ❌ Check for block
+      // Check for block
       const blockedUntil = await AsyncStorage.getItem('blockedUntil');
       if (blockedUntil && Date.now() < parseInt(blockedUntil)) {
         const mins = Math.ceil((parseInt(blockedUntil) - Date.now()) / 60000);
@@ -120,7 +120,7 @@ export default function QRScannerScreen() {
         return;
       }
 
-      // ✅ All good — Mark attendance
+      // Mark attendance
 
       await axios.post('/students/scan', {
         studentId: student._id,
@@ -134,7 +134,7 @@ export default function QRScannerScreen() {
 
       Toast.show({ type: 'success', text1: 'Attendance marked ✅' });
 
-      // Set block timer (30 mins)
+      // block timer (30 mins
       const blockUntil = Date.now() + 30 * 60 * 1000;
       await AsyncStorage.setItem('blockedUntil', blockUntil.toString());
       console.log(blockedUntil)
