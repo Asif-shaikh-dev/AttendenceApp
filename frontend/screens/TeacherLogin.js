@@ -38,7 +38,7 @@ export default function TeacherLogin() {
       await AsyncStorage.setItem('teacherInfo', JSON.stringify(res.data.teacher));
 
       showToast('success', 'Teacher logged in');
-      navigation.replace('TeacherQR'); // route we'll add in the next step
+      navigation.replace('TeacherQR'); 
     } catch (err) {
       const msg = err?.response?.data?.message || 'Login error';
       showToast('error', msg);
