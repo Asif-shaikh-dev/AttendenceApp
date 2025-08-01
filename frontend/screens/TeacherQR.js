@@ -200,7 +200,8 @@ const styles = StyleSheet.create({
 
   header: {
     flexDirection: 'row',
-    justifyContent: 'space-between', // for spacing between name and logout
+    justifyContent: 'space-between',
+    
     alignItems: 'center',
     marginBottom: 10,
     borderBottomWidth: 1,
@@ -211,7 +212,8 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '300',
     color: '#fff',
-    maxWidth: 200, // Adjust based on screen space
+    maxWidth: 200, 
+    
     marginBottom: 10
   },
 
@@ -219,7 +221,8 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 24,
     fontWeight: '700',
-    color: '#1e293b', // slate-800
+    color: '#1e293b',
+    
 
   },
 
@@ -247,11 +250,13 @@ const styles = StyleSheet.create({
   },
 
   presentyActive: {
-    backgroundColor: '#ef4444', // red-500
+    backgroundColor: '#ef4444', 
+    
   },
 
   presentyInactive: {
-    backgroundColor: '#50a3a2', // green-500
+    backgroundColor: '#50a3a2', 
+    
   },
 
   presentyText: {
@@ -281,19 +286,23 @@ const styles = StyleSheet.create({
   },
 
   active: {
-    backgroundColor: '#202224', // blue-500
+    backgroundColor: '#202224', 
+    
     borderColor: '##f2f2f2',
   },
 
   inactive: {
-    backgroundColor: '#f2f2f2',     // light bg
-    borderColor: '#cbd5e1',         // gray border
+    backgroundColor: '#f2f2f2',     
+    
+    borderColor: '#cbd5e1',         
+    
     opacity: 0.8,
   },
   qrLabel: {
     marginTop: 15,
     fontSize: 16,
-    color: '#1f2937', // gray-800
+    color: '#1f2937',
+    
     fontWeight: '500',
   },
 
@@ -366,7 +375,8 @@ const styles = StyleSheet.create({
   printBtn: {
     marginTop: 10,
     paddingVertical: 12,
-    backgroundColor: '#1e40af', // blue-800
+    backgroundColor: '#1e40af', 
+    
     borderRadius: 10,
   },
 
