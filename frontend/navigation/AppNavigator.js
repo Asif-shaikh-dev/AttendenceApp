@@ -23,7 +23,7 @@ export default function AppNavigator() {
 
   return (
     <Stack.Navigator initialRouteName={initialRoute} screenOptions={{
-      animation: 'fade', // Options: 'slide_from_right', 'fade', 'none'
+      animation: 'fade', // more animations: 'slide_from_right', 'fade', 'none'
       headerShown: false,
     }}>
       <Stack.Screen name="Auth" component={AuthScreen} options={{ headerShown: false }} />
